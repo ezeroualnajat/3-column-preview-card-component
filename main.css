@@ -16,12 +16,12 @@ body {
 /* [ END ] Main Rules */
 main {
 	display: flex;
-	border-radius: 8px;
+	border-radius: 0.5rem;
 	overflow: hidden;
 }
 main article {
-	max-width: 307px;
-	padding: 48px;
+	max-width: 19.188rem;
+	padding: 3rem;
 }
 main article:first-of-type {
 	background-color: #e28625;
@@ -30,35 +30,35 @@ main article:nth-of-type(2) {
 	background-color: #006971;
 }
 main article:last-of-type {
-	max-width: 306px;
+	max-width: 19.125rem;
 	background-color: #004140;
 }
 main article img {
-	margin-bottom: 35px;
+	margin-bottom: 2.188rem;
 	display: block;
 }
 main article h1 {
 	font-family: 'Big Shoulders Display', sans-serif;
 	text-transform: uppercase;
-	font-size: 40px;
+	font-size: 2.5rem;
 	line-height: 1.2;
-	margin-bottom: 25px;
+	margin-bottom: 0.625em;
 }
 main article p {
-	font-size: 15px;
-	line-height: 1.6666;
+	font-size: 0.9375rem;
+	line-height: 1.667;
 	opacity: 75%;
-	margin-bottom: 83px;
+	margin-bottom: 5.53333em;
 }
 main article button {
-	font-size: 15px;
+	font-size: 0.9375rem;
 	font-weight: 400;
 	line-height: 1.654;
-	border-radius: 25px;
+	border-radius: 1.6666em;
 	border-color: transparent;
 	background-color: #f2f2f2;
-	padding: 10px 31.5px 10px;
-	width: 146px;
+	padding: 0.667em 2.1em 0.667em;
+	width: 9.73333em;
 }
 main article:first-of-type button {
 	color: #e28625;
@@ -72,5 +72,5 @@ main article:last-of-type button {
 main article button:hover {
 	background: transparent;
 	color: #f2f2f2;
-	border: 2px solid #f2f2f2;
+	border: 0.125rem solid #f2f2f2;
 }
