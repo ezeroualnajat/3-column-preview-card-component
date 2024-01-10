@@ -12,16 +12,33 @@ body {
 	justify-content: center;
 	color: #f2f2f2;
 	background-color: #f2f2f2;
+	padding: 1.5rem;
+}
+.seo__only {
+	display: none;
 }
 /* [ END ] Main Rules */
 main {
 	display: flex;
 	border-radius: 0.5rem;
 	overflow: hidden;
+	max-width: 57.5rem;
+}
+@media screen and (max-width: 768px) {
+	main {
+		flex-direction: column;
+		max-width: 20.4375rem;
+	}
 }
 main article {
-	max-width: 19.188rem;
+	max-width: calc(100% / 3);
 	padding: 3rem;
+}
+@media screen and (max-width: 768px) {
+	main article {
+		max-width: 100%;
+		padding: 3rem 3.063rem;
+	}
 }
 main article:first-of-type {
 	background-color: #e28625;
@@ -30,19 +47,21 @@ main article:nth-of-type(2) {
 	background-color: #006971;
 }
 main article:last-of-type {
-	max-width: 19.125rem;
+	/* max-width: 19.125rem; */
 	background-color: #004140;
 }
-main article img {
+main article header {
+	margin-bottom: 1.5625rem;
+}
+main article header img {
 	margin-bottom: 2.188rem;
 	display: block;
 }
-main article h1 {
+main article header h2 {
 	font-family: 'Big Shoulders Display', sans-serif;
 	text-transform: uppercase;
 	font-size: 2.5rem;
 	line-height: 1.2;
-	margin-bottom: 0.625em;
 }
 main article p {
 	font-size: 0.9375rem;
@@ -50,27 +69,33 @@ main article p {
 	opacity: 75%;
 	margin-bottom: 5.53333em;
 }
-main article button {
+@media screen and (max-width: 768px) {
+	main article p {
+		margin-bottom: 1.6667em;
+	}
+}
+main article footer button {
 	font-size: 0.9375rem;
 	font-weight: 400;
 	line-height: 1.654;
 	border-radius: 1.6666em;
-	border-color: transparent;
+	border: 2px solid transparent;
 	background-color: #f2f2f2;
-	padding: 0.667em 2.1em 0.667em;
-	width: 9.73333em;
+	padding: 0.667em 2.203em;
+	cursor: pointer;
 }
-main article:first-of-type button {
+main article:first-of-type footer button {
 	color: #e28625;
 }
-main article:nth-of-type(2) button {
+main article:nth-of-type(2) footer button {
 	color: #006971;
 }
-main article:last-of-type button {
+main article:last-of-type footer button {
 	color: #004140;
 }
-main article button:hover {
+main article footer button:hover {
 	background: transparent;
 	color: #f2f2f2;
-	border: 0.125rem solid #f2f2f2;
+	border-color: #f2f2f2;
+	transition: all 0.3s ease-in-out;
 }
